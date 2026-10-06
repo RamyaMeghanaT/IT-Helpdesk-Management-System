@@ -50,3 +50,16 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    }
 }
 
+##Priority - onLoad
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+
+   var imp = g_form.getValue( "u_impact" );
+   var urg = g_form.getValue( "u_urgency" );
+   
+   if( imp == "high" && urg == "high" ) {
+	g_form.setValue( "u_priority" , "critical");
+   }
+   
+}
